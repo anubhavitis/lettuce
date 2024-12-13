@@ -70,7 +70,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, NSWind
         configuration.userContentController = userContentController
 
         // 2. Create Window
-        window = KeyboardMonitorWindow(
+        window = NSWindow(
             contentRect: NSRect(x: 0, y: 0, width: 900, height: 600),
             styleMask: [.titled, .closable, .miniaturizable, .resizable],
             backing: .buffered,
